@@ -21,5 +21,6 @@
     lg = log -p
     la = "!git config -l | grep alias | cut -c 7-"
     f = "!git ls-files | grep -i"
+    rbm = "!git stash && git pull origin master && git rebase master && git stash pop"
 [core]
 	editor = vim
